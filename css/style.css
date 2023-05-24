@@ -27,6 +27,18 @@
 #menu ul li a:hover{
     background-color:black;
 }
+
+/* BODY */
+
+.whatsapp, .gmail{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 /*==========================FOOT=========================*/
 #pie{
     background-color: black;
