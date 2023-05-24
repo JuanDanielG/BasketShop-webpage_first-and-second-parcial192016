@@ -84,8 +84,8 @@ h1.titulo{
     list-style: none;
 }
 .slider img{
-    width: 85%;
-    height: 80%;
+    width: 65%; /*=== ancho===*/
+    height: 65%; /*=== alto===*/
 }
 @keyframes cambio{
     0%{margin-left: 0;}
