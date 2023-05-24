@@ -52,10 +52,6 @@
         <div>
                 <p>Fecha de nacimiento: <input  type="date" name="date" required /></p>
         </div>
-        <!--NUMERO DE -10 A 10-->
-        <div>
-                <p>Número (min 0, max 10): <input type="number" name="number_control" value="0" required /></p>
-        </div>
         <!--TELEFONO-->
         <div>
                 <p> Teléfono: <input  type="tel" name="tel_control" placeholder="315 586 4126" maxlength="10" required /></p>
@@ -76,12 +72,9 @@
                 </select>
         </div>
         <br>
-        <!--COMENTARIO-->
-        <p>Escribe un comentario sobre nuestra página:</p><br>
-                 <textarea name="coment" rows="4" cols="50" placeholder="Escribe lo que estes pensando ahora" spellcheck="true"></textarea>
         <!--BOTONES-->
 	<div>
-                <input class="validar" type="submit" value="Enviar">
+                <input class="validar"  id="botonCompra" type="submit" value="Enviar">
 		<input class="validar" type="reset" value="Borrar">
         </div>
         <br>
@@ -95,5 +88,7 @@
                         </div>
                     </footer>
 	</form>
+        <script src="../js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

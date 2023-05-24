@@ -30,6 +30,9 @@
 body{
     background-image: radial-gradient(circle at 64.61% 48.72%, #819a98 0, #6b8d8c 16.67%, #4f7c7d 33.33%, #2a686d 50%, #00555e 66.67%, #004552 83.33%, #00384a 100%);
 }
+#body-formCompra{
+    background-image: radial-gradient(circle at 50% -20.71%, #ffff89 0, #ffff80 16.67%, #fcf176 33.33%, #d8d86c 50%, #b7bf62 66.67%, #9aa859 83.33%, #819351 100%);
+}
 
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;

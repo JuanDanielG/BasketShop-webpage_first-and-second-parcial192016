@@ -77,7 +77,7 @@ h1.titulo{
     display: flex;
     animation: cambio 15s infinite alternate linear;
     width: 400%;
-    -webkit-animation: cambio 15s infinite alternate linear;
+    -webkit-animation: cambio 12s infinite alternate linear;
 }
 .slider li{
     width: 100%;
