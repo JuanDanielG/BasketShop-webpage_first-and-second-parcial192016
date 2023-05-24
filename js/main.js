@@ -17,6 +17,7 @@ botonCompra.addEventListener('click', function() {
   // También puedes realizar otras acciones, como enviar datos al servidor, mostrar u ocultar elementos, etc.
 });
 
+//Boton comprar en la tienda que te redirige al formulario de compra
 document.getElementById("btnComprar").addEventListener("click", function comprar() {
     window.location.href = "formulariodeCompra.html";
   });
