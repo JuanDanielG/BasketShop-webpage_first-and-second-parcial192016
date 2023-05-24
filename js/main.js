@@ -75,6 +75,6 @@ miBoton.addEventListener('click', function(event) {
 });
 
 //BOTON EN EL FORMULARIO DE REGISTRO QUE ME ENVIE A LA PAGINA PRINCIPAL
-document.getElementById('botonCompra').addEventListener("click", function comprar() {
+document.getElementById('botonCompra2').addEventListener("click", function comprar() {
   window.location.href = "../index.html";
 });
