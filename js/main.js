@@ -52,7 +52,7 @@ document.getElementById('botonCompra').addEventListener("click", function compra
 
   
   // Obtén una referencia al botón de envío
-const miBoton = document.getElementById('botonCompra');
+const miBoton = document.getElementById('#botonCompra');
 
 // Agrega un event listener al botón de envío
 miBoton.addEventListener('click', function(event) {
@@ -75,6 +75,6 @@ miBoton.addEventListener('click', function(event) {
 });
 
 //BOTON EN EL FORMULARIO DE REGISTRO QUE ME ENVIE A LA PAGINA PRINCIPAL
-document.getElementById('botonCompra2').addEventListener("click", function comprar() {
+document.getElementById('#botonCompra').addEventListener("click", function comprar() {
   window.location.href = "../index.html";
 });
