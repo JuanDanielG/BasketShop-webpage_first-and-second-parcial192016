@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* esta propiedad me ayuda a que las medidas se sumen de manera completa */
+    max-width: 100%;
 }
 /*===================BARRA DE MENU=========================*/
 #menu{
