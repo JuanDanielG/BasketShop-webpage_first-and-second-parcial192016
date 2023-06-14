@@ -1,8 +1,4 @@
-*{ /* sirve para eliminar la pequeña linea de la pagina  */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* esta propiedad me ayuda a que las medidas se sumen de manera completa */
-}
+
 /*===================BARRA DE MENU=========================*/
 #menu{
     background-color: orange;
@@ -63,14 +59,9 @@ h1.titulo{
 }
 
 /*===========================Slider=======================*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .slider{
   width: 100%;
-  height: 500px;
+  height: 450px;
   overflow: hidden;
 }
 .slider ul{
