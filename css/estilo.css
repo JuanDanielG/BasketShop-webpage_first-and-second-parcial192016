@@ -50,6 +50,8 @@ a{
 }
 p{
     font-size: 16px;
+    line-height: 2em;
+    letter-spacing: .03rem;
 }
 /*==========================FOOT=========================*/
 #pie{
@@ -112,6 +114,13 @@ table,td {
   .button:hover {
     background-color: #4CAF50;
     color: white;
+}
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
 }
 /*=================BOTONES DEL FORMULARIO=================*/
 input{

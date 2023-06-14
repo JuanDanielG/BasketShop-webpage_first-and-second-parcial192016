@@ -26,13 +26,11 @@
 	<h1>¡Rellena todos tus datos para comprar!</h1><br>
         <div id="menu"></div>
 
-	<form style="text-align: center;" method="get" accept-charset="utf-8">
+	<form style="text-align: center;" id="form" method="get" accept-charset="utf-8">
         <div>
                  <!--NOMBRE-->
-                <p> Nombres: <input type="text" name="name" maxlength="30" placeholder="INGRESE NOMBRE" required/></p>
-                <!--APELLIDOS-->
-                <p>Apellidos: <input type="text" name="last_name" maxlength="30" placeholder="INGRESE APELLIDOS" required></p>
-        
+                <p> Nombre Completo: <input type="text" id="name" name="name" maxlength="30" placeholder="INGRESE NOMBRE" /></p>
+                
         </div>
         <!--GENERO-->
         <div>
@@ -42,29 +40,27 @@
         </div>
         <!--CONTRASEÑA-->
         <div>
-                <p> Contraseña: <input  type="password" name="pass" minlength="8" maxlength="16" placeholder="min 8 caracteres max 16" required/> </p>
+                <p> Contraseña: <input  type="password" id="password" name="pass" minlength="8" maxlength="16" placeholder="min 8 caracteres max 16" /> </p>
         </div>
         <!--CORREO ELECTRONICO-->
         <div>
-                <p>Correo Electrónico: <input  type="email" name="email" placeholder="correo@ejemplo.com" required/></p>
-        </div>
-        <!--FECHA DE NACIMIENTO-->
-        <div>
-                <p>Fecha de nacimiento: <input  type="date" name="date" required /></p>
+                <p>Correo Electrónico: <input  type="email" id="email" name="email" placeholder="correo@ejemplo.com" /></p>
         </div>
         <!--TELEFONO-->
         <div>
-                <p> Teléfono: <input  type="tel" name="tel_control" placeholder="315 586 4126" maxlength="10" required /></p>
+                <p> Teléfono: <input  type="tel" name="tel_control" placeholder="315 586 4126" maxlength="10"  /></p>
         </div><br>
         <!--BOTONES-->
 	<div>
                 <input class="validar" id="botonCompra" type="submit" value="Enviar">
 		<input class="validar" type="reset" value="Borrar">
+                <p class="warnings" id="warnings"></p>
         </div>
-        <br>
-        <br>       
+        <br><br><br><br><br><br><br>
+               
 		 <!--Pie de pagina-->
                  <footer id="pie">
+                        
                         <div align="center">
                             <p>Juan Daniel Galeano</p>
                             <p>Cod: 192016</p>
@@ -74,5 +70,39 @@
 	</form>
         <script src="../js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+                // Validaciones Formulario de compra
+const nombre = document.getElementById("name");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const form = document.getElementById("form");
+const parrafo = document.getElementById("warnings");
+
+form.addEventListener("submit", e=>{
+  e.preventDefault() //para q
+  let warnings = ""
+  let entrar = false
+  let regexEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
+  parrafo.innerHTML = ""
+
+  if(nombre.value.length<6){
+    warnings += 'El nombre no es valido <br>'
+    entrar = true
+  }
+  if(!regexEmail.test(email.value)){
+    warnings += 'El email no es valido <br>'
+    entrar = true
+  }
+  if(password.value.length < 8){
+    warnings += 'El contraseña no es valido <br>'
+    entrar = true
+  }
+  if(entrar){
+    parrafo.innerHTML = warnings
+  }else{
+    parrafo.innerHTML = "Enviado"
+  }
+})
+        </script>
 </body>
 </html>
